@@ -1,3 +1,56 @@
 .container h1 {
   margin-bottom: 3rem;
 }
+
+.bottom-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.bottom-row a {
+  text-decoration: none;
+}
+
+.projects-grid .box {
+  justify-content: space-between;
+}
+
+.bottom-row .btn-view-all {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ===============
+    TABLET
+==================*/
+@media (min-width: 768px) {
+}
+
+/* ===============
+    DESKTOP
+==================*/
+@media (min-width: 1280px) {
+  .top-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bottom-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottom-row .btn-view-all {
+    width: auto;
+  }
+
+  .bottom-row .box-hobby {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+  }
+}

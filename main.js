@@ -44,13 +44,15 @@ menu
   .querySelectorAll("a")
   .forEach((link) => link.addEventListener("click", closeMenu));
 
-// ==================
+/// ==================
 //    DARK MODE
 // ==================
 function setTheme(isDark) {
   document.body.classList.toggle("dark", isDark);
-  profilePicture.src = isDark ? darkImg : lightImg;
-  profilePicture.alt = isDark ? "Me with closed eyes" : "Me with open eyes";
+  if (profilePicture) {
+    profilePicture.src = isDark ? darkImg : lightImg;
+    profilePicture.alt = isDark ? "Me with closed eyes" : "Me with open eyes";
+  }
   localStorage.setItem("theme", isDark ? "dark" : "light");
 }
 
