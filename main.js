@@ -58,6 +58,14 @@ themeBtn.addEventListener("click", () => {
   setTheme(!document.body.classList.contains("dark"));
 });
 
+// SAVE THEME FOR CONSISTENT THEME THROUGHOUT PAGES
+const savedTheme = localStorage.getItem("theme");
+setTheme(
+  savedTheme
+    ? savedTheme === "dark"
+    : window.matchMedia("(prefers-color-scheme: dark)").matches,
+);
+
 // ==================
 //    SMOOTH SCROLL
 // ==================

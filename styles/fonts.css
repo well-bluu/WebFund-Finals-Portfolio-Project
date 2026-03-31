@@ -40,7 +40,7 @@ body.dark {
 body:not(.dark) {
   --bg: #eef0f2;
   --text: #0d1e2e;
-  --menu-bg: #e8e6e1;
+  --menu-bg: #eef0f2;
   --tag: #3a4a5a;
   --bg-base: #eef0f2;
 }

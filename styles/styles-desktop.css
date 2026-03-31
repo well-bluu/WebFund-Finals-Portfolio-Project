@@ -112,6 +112,10 @@
     text-align: left;
   }
 
+  .projects-preview .tagline {
+    text-align: left;
+  }
+
   .grid-container {
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-areas:

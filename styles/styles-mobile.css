@@ -632,6 +632,7 @@ body:not(.dark) .icon-moon {
 
 .projects-preview .tagline {
   margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 .projects-preview h1 {
