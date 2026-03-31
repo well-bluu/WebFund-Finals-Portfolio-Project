@@ -1,0 +1,142 @@
+@media (min-width: 1280px) {
+  .hamburger,
+  .overlay {
+    display: none;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+  }
+
+  .menu {
+    position: static;
+    width: auto;
+    max-width: none;
+    height: auto;
+    background: transparent;
+    transform: none;
+    flex-direction: row;
+  }
+
+  .menu ul {
+    display: flex;
+    gap: 30px;
+  }
+  .header .container {
+    gap: 40px;
+  }
+
+  .hero .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    min-height: 80vh;
+    padding-block: 3rem;
+  }
+
+  .hero-left {
+    align-items: flex-start;
+    flex: 1;
+  }
+  .hero-right {
+    flex-shrink: 0;
+  }
+
+  .image-wrapper {
+    width: 520px;
+    height: 520px;
+    margin-inline: 0;
+  }
+  .image-box {
+    width: 450px;
+    height: 450px;
+  }
+  .ring-1 {
+    width: 470px;
+    height: 470px;
+  }
+  .ring-2 {
+    width: 490px;
+    height: 490px;
+  }
+  .ring-3 {
+    width: 510px;
+    height: 510px;
+  }
+
+  .content {
+    text-align: left;
+    gap: 1rem;
+  }
+  .name {
+    font-size: clamp(3rem, 4.5vw, 5rem);
+  }
+  .badge {
+    font-size: 1.2rem;
+  }
+  .tagline {
+    font-size: 1.25rem;
+  }
+  .links-box {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .carousel-container {
+    padding: 1.5rem 0;
+  }
+  .item i {
+    font-size: 1.5rem;
+  }
+  .item span {
+    font-size: 1.2rem;
+  }
+
+  .about-me,
+  .projects-preview {
+    padding: 7rem 0 5rem;
+  }
+
+  .about-me h1,
+  .projects-preview h1 {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .about-me .container,
+  .projects-preview .container {
+    text-align: left;
+  }
+
+  .grid-container {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+      "box-1 box-1 box-2"
+      "box-3 box-4 box-5";
+    max-width: 100%;
+    margin-top: 48px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .projects-cta {
+    justify-content: flex-start;
+  }
+
+  .footer {
+    padding: 1rem 0 4rem;
+  }
+  .footer h1 {
+    font-size: 3.5rem;
+  }
+  .footer .container {
+    padding-top: 5rem;
+  }
+}

@@ -1,0 +1,46 @@
+/* ==================
+    FONTS
+=======================*/
+@font-face {
+  font-family: "Geist Sans";
+  src: url("../assets/fonts/Geist-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("../assets/fonts/GeistMono-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==================
+    VARIABLES
+=======================*/
+:root {
+  --bg: #0a1628;
+  --text: #f2f7f2;
+  --menu-bg: #0d1e38;
+  --tag: #a0b4c8;
+  --accent: #5ab9ed;
+  --bg-base: #0a1628;
+}
+
+body.dark {
+  --bg: #0a1628;
+  --text: #f2f7f2;
+  --menu-bg: #0d1e38;
+  --tag: #a0b4c8;
+  --bg-base: #0a1628;
+}
+
+body:not(.dark) {
+  --bg: #eef0f2;
+  --text: #0d1e2e;
+  --menu-bg: #e8e6e1;
+  --tag: #3a4a5a;
+  --bg-base: #eef0f2;
+}

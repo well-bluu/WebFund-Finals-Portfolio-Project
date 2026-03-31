@@ -1,0 +1,97 @@
+@media (min-width: 768px) {
+  .container {
+    padding-inline: 3rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .theme-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .hero .container {
+    min-height: 80vh;
+    gap: 3rem;
+    padding-block: 3rem;
+  }
+
+  .menu {
+    width: 50%;
+  }
+
+  .image-wrapper {
+    width: 380px;
+    height: 380px;
+  }
+  .image-box {
+    width: 320px;
+    height: 320px;
+  }
+  .ring-1 {
+    width: 336px;
+    height: 336px;
+  }
+  .ring-2 {
+    width: 352px;
+    height: 352px;
+  }
+  .ring-3 {
+    width: 368px;
+    height: 368px;
+  }
+
+  .content {
+    gap: 1rem;
+  }
+  .name {
+    font-size: 3.8rem;
+  }
+  .badge {
+    font-size: 0.9rem;
+  }
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .carousel-container {
+    padding: 2rem 0;
+  }
+  .item i {
+    font-size: 1.6rem;
+  }
+  .item span {
+    font-size: 1rem;
+  }
+
+  .about-me,
+  .projects-preview {
+    padding: 6rem 0 4rem;
+  }
+
+  .about-me h1,
+  .projects-preview h1,
+  .footer h1 {
+    font-size: 2.4rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "box-1 box-2"
+      "box-3 box-4"
+      "box-5 box-5";
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .footer h1 {
+    font-size: 2.4rem;
+  }
+}

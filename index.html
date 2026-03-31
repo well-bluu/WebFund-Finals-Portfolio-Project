@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- REMIXICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet" />
+
+    <!-- DEVICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/styles-mobile.css" />
+    <link rel="stylesheet" href="styles/styles-tablet.css" />
+    <link rel="stylesheet" href="styles/styles-desktop.css" />
+
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <!-- INTRO OVERLAY -->
+    <div id="intro-overlay">
+      <h1 class="intro-logo" data-text="well .">well <span>.</span></h1>
+      <p class="intro-sub">// SYSTEM STANDBY //</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="index.html">well <span class="color">.</span></a>
+
+        <nav>
+          <!-- HAMBURGER -->
+          <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- OVERLAY -->
+          <div class="overlay" id="overlay"></div>
+
+          <!-- LINKS -->
+          <div class="menu" id="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- DARK MODE TOGGLE -->
+        <button
+          class="theme-btn btn-neon"
+          id="theme-btn"
+          aria-label="Toggle theme">
+          <i class="ri-sun-line icon-sun"></i>
+          <i class="ri-moon-line icon-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section class="hero" id="home">
+        <div class="container">
+          <!-- HERO RIGHT -->
+          <div class="hero-right">
+            <div class="image-wrapper">
+              <div class="image-box">
+                <img
+                  class="profile-picture"
+                  id="profile-picture"
+                  src="./assets/images/me-open-eyes.jpg"
+                  alt="Me with open eyes" />
+              </div>
+              <div class="ring ring-1"></div>
+              <div class="ring ring-2"></div>
+              <div class="ring ring-3"></div>
+            </div>
+          </div>
+
+          <!-- HERO LEFT -->
+          <div class="hero-left">
+            <div class="content">
+              <span class="badge">Software Engineering Student</span>
+              <h1 class="name">
+                Hello, I'm <br />
+                <span class="color hover-box">Kendall Bryant<br />Maputi</span>
+              </h1>
+
+              <!-- SMALL INTRO -->
+              <p class="tagline">Built on fundamentals. Driven by progress.</p>
+            </div>
+
+            <!-- SOCIAL MEDIA LINKS -->
+
+            <!-- Facebook -->
+            <div class="links-box">
+              <div class="circle">
+                <a
+                  class="links"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="ri-facebook-circle-fill"></i>
+                </a>
+              </div>
+
+              <!-- Instagram -->
+              <div class="circle">
+                <a
+                  class="links"
+                  href="https://www.instagram.com/katarinabluu/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="ri-instagram-line"></i>
+                </a>
+              </div>
+
+              <!-- X -->
+              <div class="circle">
+                <a
+                  class="links"
+                  href="https://x.com/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="ri-twitter-x-line"></i>
+                </a>
+              </div>
+
+              <!-- Threads -->
+              <div class="circle">
+                <a
+                  class="links"
+                  href="https://www.threads.com/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="ri-threads-line"></i>
+                </a>
+              </div>
+
+              <!-- Github -->
+              <div class="circle">
+                <a
+                  class="links"
+                  href="https://github.com/well-bluu"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <i class="ri-github-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CAROUSEL -->
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- SET 1 -->
+          <div class="item">
+            <i class="devicon-cplusplus-plain"></i><span>C++</span>
+          </div>
+          <div class="item">
+            <i class="devicon-java-plain"></i><span>Java</span>
+          </div>
+          <div class="item">
+            <i class="devicon-html5-plain"></i><span>HTML</span>
+          </div>
+          <div class="item">
+            <i class="devicon-css3-plain"></i><span>CSS</span>
+          </div>
+          <div class="item">
+            <i class="devicon-javascript-plain"></i><span>JavaScript</span>
+          </div>
+          <div class="item">
+            <i class="devicon-git-plain"></i><span>Git</span>
+          </div>
+
+          <!-- SET 2 -->
+          <div class="item">
+            <i class="devicon-cplusplus-plain"></i><span>C++</span>
+          </div>
+          <div class="item">
+            <i class="devicon-java-plain"></i><span>Java</span>
+          </div>
+          <div class="item">
+            <i class="devicon-html5-plain"></i><span>HTML</span>
+          </div>
+          <div class="item">
+            <i class="devicon-css3-plain"></i><span>CSS</span>
+          </div>
+          <div class="item">
+            <i class="devicon-javascript-plain"></i><span>JavaScript</span>
+          </div>
+          <div class="item">
+            <i class="devicon-git-plain"></i><span>Git</span>
+          </div>
+
+          <!-- SET 3 -->
+          <div class="item">
+            <i class="devicon-cplusplus-plain"></i><span>C++</span>
+          </div>
+          <div class="item">
+            <i class="devicon-java-plain"></i><span>Java</span>
+          </div>
+          <div class="item">
+            <i class="devicon-html5-plain"></i><span>HTML</span>
+          </div>
+          <div class="item">
+            <i class="devicon-css3-plain"></i><span>CSS</span>
+          </div>
+          <div class="item">
+            <i class="devicon-javascript-plain"></i><span>JavaScript</span>
+          </div>
+          <div class="item">
+            <i class="devicon-git-plain"></i><span>Git</span>
+          </div>
+
+          <!-- SET 4 -->
+          <div class="item">
+            <i class="devicon-cplusplus-plain"></i><span>C++</span>
+          </div>
+          <div class="item">
+            <i class="devicon-java-plain"></i><span>Java</span>
+          </div>
+          <div class="item">
+            <i class="devicon-html5-plain"></i><span>HTML</span>
+          </div>
+          <div class="item">
+            <i class="devicon-css3-plain"></i><span>CSS</span>
+          </div>
+          <div class="item">
+            <i class="devicon-javascript-plain"></i><span>JavaScript</span>
+          </div>
+          <div class="item">
+            <i class="devicon-git-plain"></i><span>Git</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT ME -->
+      <section class="about-me" id="about">
+        <div class="container">
+          <h1>A Little Bit <span class="color hover-box">About Me</span></h1>
+
+          <div class="grid-container">
+            <!-- BIO -->
+            <div class="box" style="grid-area: box-1">
+              <span class="box-label">About</span>
+              <p class="box-body">
+                I started with C++ and Java, and now also learning web
+                development. I care about building things that look good and
+                work well.
+              </p>
+            </div>
+
+            <!-- SCHOOL -->
+            <div class="box" style="grid-area: box-2">
+              <span class="box-label">School</span>
+              <p class="box-title">iACADEMY Cebu</p>
+              <span class="box-sub">2nd Year · BSCS - SE</span>
+            </div>
+
+            <!-- FUN FACTS -->
+            <div class="box" style="grid-area: box-3">
+              <span class="box-label">Fun Facts</span>
+              <div class="box-fact">
+                <span class="color">●</span>
+                <p class="box-body">I like anything with Eastern vibes</p>
+              </div>
+              <div class="box-fact">
+                <span class="color">●</span>
+                <p class="box-body">I enjoy drinking coffee</p>
+              </div>
+              <div class="box-fact">
+                <span class="color">●</span>
+                <p class="box-body">
+                  I read webnovels, manga, manhwa, and manhua
+                </p>
+              </div>
+            </div>
+
+            <!-- CURRENTLY LEARNING -->
+            <div class="box" style="grid-area: box-4">
+              <span class="box-label">Currently Learning</span>
+              <div class="box-learning">
+                <div class="box-learn-item active">
+                  <div class="learn-dot"></div>
+                  <span>Java</span>
+                </div>
+                <div class="box-learn-item active">
+                  <div class="learn-dot"></div>
+                  <span>JavaScript</span>
+                </div>
+                <div class="box-learn-item">
+                  <div class="learn-dot"></div>
+                  <span class="dim">React - next up</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- HOBBIES -->
+            <div class="box" style="grid-area: box-5">
+              <span class="box-label">Hobbies</span>
+              <div class="box-flex">
+                <div class="box-hobby"><span>Reading</span></div>
+                <div class="box-hobby"><span>Gaming</span></div>
+                <div class="box-hobby"><span>Anime</span></div>
+                <div class="box-hobby"><span>Music</span></div>
+                <div class="box-hobby"><span>Walking</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS PREVIEW -->
+      <section class="projects-preview" id="projects">
+        <div class="container">
+          <h1>My <span class="color hover-box">Projects</span></h1>
+          <p class="tagline">A few things I've built so far.</p>
+
+          <div class="projects-grid">
+            <!-- PROJECT CARD 1 -->
+            <div class="box">
+              <div class="flex-between">
+                <span class="box-label">Java</span>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/well-bluu/Java-Finals-Webnovel-To-Epub"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="ri-github-fill"></i>
+                  </a>
+                </div>
+              </div>
+              <p class="box-title">Webnovel to Epub</p>
+              <p class="box-body">
+                A multithreaded Java application that downloads web novels from
+                a website and packages them into an EPUB file.
+              </p>
+              <div class="box-flex">
+                <div class="box-hobby"><span>Java</span></div>
+              </div>
+            </div>
+
+            <!-- PROJECT CARD 2 -->
+            <div class="box">
+              <div class="flex-between">
+                <span class="box-label">Web</span>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/well-bluu/Card-Gallery"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="ri-github-fill"></i>
+                  </a>
+                  <a
+                    href="https://a-will-eternal-gallery.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="ri-external-link-line"></i>
+                  </a>
+                </div>
+              </div>
+              <p class="box-title">Card Gallery</p>
+              <p class="box-body">
+                A simple HTML + CSS card gallery featuring the main character of
+                A Will Eternal and his wives.
+              </p>
+              <div class="box-flex">
+                <div class="box-hobby"><span>HTML</span></div>
+                <div class="box-hobby"><span>CSS</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIEW ALL BUTTON -->
+          <div class="projects-btn">
+            <a href="projects.html" class="btn-view-all">
+              View All Projects <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer" id="contact">
+        <div class="container">
+          <h1>
+            Initiating <span class="color hover-box">contact</span> sequence.
+          </h1>
+          <a href="contact.html" class="btn-view-all">
+            Click here <i class="ri-arrow-right-line"></i>
+          </a>
+          <p class="footer-copy">
+            © 2025 Kendall Bryant Maputi. All rights reserved.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
