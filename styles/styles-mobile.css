@@ -872,6 +872,16 @@ body:not(.dark) .box {
   transform: translateX(5px);
 }
 
+.cta-box {
+  justify-content: space-between;
+}
+
+.cta-box .btn-view-all {
+  width: 100%;
+  justify-content: center;
+  margin-top: auto;
+}
+
 /* ==================
     FOOTER
 =======================*/
