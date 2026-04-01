@@ -24,18 +24,22 @@
     width: 380px;
     height: 380px;
   }
+
   .image-box {
     width: 320px;
     height: 320px;
   }
+
   .ring-1 {
     width: 336px;
     height: 336px;
   }
+
   .ring-2 {
     width: 352px;
     height: 352px;
   }
+
   .ring-3 {
     width: 368px;
     height: 368px;
@@ -47,9 +51,11 @@
   .name {
     font-size: 3.8rem;
   }
+
   .badge {
     font-size: 0.9rem;
   }
+
   .tagline {
     font-size: 1rem;
   }
@@ -57,9 +63,11 @@
   .carousel-container {
     padding: 2rem 0;
   }
+
   .item i {
     font-size: 1.6rem;
   }
+
   .item span {
     font-size: 1rem;
   }

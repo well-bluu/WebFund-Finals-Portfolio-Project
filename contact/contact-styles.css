@@ -1,0 +1,293 @@
+.left-content {
+  margin-bottom: 32px;
+}
+
+.top-content .box-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--tag);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.top-content h1 {
+  margin-bottom: 1rem;
+}
+
+.top-content {
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 10px;
+  height: auto;
+  width: 100%;
+}
+
+.terminal-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 14px;
+  background-color: var(--menu-bg);
+  border-bottom: 1px solid rgba(90, 185, 237, 0.15);
+}
+
+.dots {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.learn-dot {
+  height: 10px;
+  width: 10px;
+  opacity: 1;
+}
+.contact-form .learn-dot:nth-child(1) {
+  background: #ff5f57;
+}
+
+.contact-form .learn-dot:nth-child(2) {
+  background: #ffbd2e;
+}
+
+.contact-form .learn-dot:nth-child(3) {
+  background: #28ca41;
+}
+
+.box-label {
+  display: flex;
+  margin-left: 75px;
+  font-size: 0.8rem;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.contact-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: #050d1a;
+  gap: 25px;
+}
+
+.contact-field.box-sub {
+  display: flex;
+  flex-direction: column;
+  opacity: 0.75;
+  font-size: 0.8rem;
+  gap: 8px;
+}
+
+.contact-input {
+  width: 100%;
+  background: rgba(0, 212, 255, 0.04);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-family: "Geist Mono";
+  font-size: 1rem;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.contact-input:focus {
+  border-color: var(--accent);
+}
+
+.input-area {
+  width: 100%;
+  background: rgba(0, 212, 255, 0.04);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-family: "Geist Mono";
+  font-size: 1rem;
+  color: var(--text);
+  outline: none;
+  resize: none;
+  transition: border-color 0.2s ease;
+}
+
+.btn-view-all {
+  justify-content: center;
+}
+
+.btn-view-all:active {
+  transform: scale(0.95);
+  transition: transform 0.05s ease;
+}
+
+/* ========================
+        RIGHT CONTENT
+============================ */
+
+.right-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0px;
+}
+
+/* TOP */
+
+.top-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+
+.top-row-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-row-content .learn-dot {
+  background: #28ca41;
+}
+
+.top-row-content .box-sub.color {
+  color: #28ca41;
+}
+
+/* MIDDLE */
+
+.middle-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px 0;
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+
+.middle-content-1,
+.middle-content-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.middle-content-2 p {
+  font-size: 1.2rem;
+}
+
+/* BOTTOM */
+
+.bottom-row {
+  width: 100%;
+  padding-top: 32px;
+}
+
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 12px 24px;
+  margin-top: 8px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-item .box-sub {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.social-item:hover .box-sub {
+  opacity: 1;
+  color: var(--accent);
+}
+
+/* ========================
+        TABLET
+============================ */
+@media (min-width: 768px) {
+  .contact-page .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "top top"
+      "left right";
+    gap: 32px;
+  }
+
+  .top-content {
+    grid-area: top;
+  }
+  .left-content {
+    grid-area: left;
+    margin-bottom: 0;
+  }
+  .right-content {
+    grid-area: right;
+  }
+}
+
+/* ========================
+        DESKTOP
+============================ */
+@media (min-width: 1280px) {
+  .contact-page .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "top top"
+      "left right";
+    gap: 48px;
+    align-items: start;
+  }
+
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .top-content .box-sub {
+    display: block;
+    letter-spacing: 0.2em;
+  }
+
+  .top-content h1 {
+    font-size: 3rem;
+  }
+
+  .left-content {
+    grid-area: left;
+  }
+
+  .right-content {
+    grid-area: right;
+  }
+
+  .middle-row {
+    gap: 32px;
+  }
+
+  .middle-content-2 p {
+    font-size: 1.5rem;
+  }
+
+  .bottom-row {
+    margin-top: auto;
+  }
+}

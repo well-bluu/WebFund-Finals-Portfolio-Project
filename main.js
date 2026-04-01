@@ -53,15 +53,15 @@ function setTheme(isDark) {
     profilePicture.src = isDark ? darkImg : lightImg;
     profilePicture.alt = isDark ? "Me with closed eyes" : "Me with open eyes";
   }
-  localStorage.setItem("theme", isDark ? "dark" : "light");
+  sessionStorage.setItem("theme", isDark ? "dark" : "light");
 }
 
 themeBtn.addEventListener("click", () => {
   setTheme(!document.body.classList.contains("dark"));
 });
 
-// SAVE THEME FOR CONSISTENT THEME THROUGHOUT PAGES
-const savedTheme = localStorage.getItem("theme");
+// SAVE THEME
+const savedTheme = sessionStorage.getItem("theme");
 setTheme(
   savedTheme
     ? savedTheme === "dark"
