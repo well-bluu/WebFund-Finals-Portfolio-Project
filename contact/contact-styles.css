@@ -23,6 +23,7 @@
   border-radius: 10px;
   height: auto;
   width: 100%;
+  overflow: hidden;
 }
 
 .terminal-bar {
@@ -30,7 +31,7 @@
   flex-direction: row;
   align-items: center;
   padding: 10px 14px;
-  background-color: var(--menu-bg);
+  background-color: #16213e;
   border-bottom: 1px solid rgba(90, 185, 237, 0.15);
 }
 
@@ -58,10 +59,11 @@
 
 .box-label {
   display: flex;
-  margin-left: 75px;
+  margin-inline: auto;
   font-size: 0.8rem;
   letter-spacing: normal;
   text-transform: none;
+  color: #eef0f2;
 }
 
 .contact-body {
@@ -88,7 +90,7 @@
   padding: 8px 10px;
   font-family: "Geist Mono";
   font-size: 1rem;
-  color: var(--text);
+  color: #f2f7f2;
   outline: none;
   transition: border-color 0.2s ease;
 }
@@ -105,7 +107,7 @@
   padding: 8px 10px;
   font-family: "Geist Mono";
   font-size: 1rem;
-  color: var(--text);
+  color: #f2f7f2;
   outline: none;
   resize: none;
   transition: border-color 0.2s ease;
@@ -216,6 +218,40 @@
   color: var(--accent);
 }
 
+/* LIGHT MODE FIX*/
+
+body:not(.dark) .right-content {
+  background-color: #f5f3ee;
+  border: 1px solid rgba(0, 16, 33, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 100%;
+}
+
+body:not(.dark) .right-content .box-sub.dim {
+  color: var(--tag);
+}
+
+body:not(.dark) .middle-row {
+  border-color: rgba(0, 16, 33, 0.15);
+}
+
+body:not(.dark) .top-row-content {
+  border-bottom: none;
+}
+
+body:not(.dark) .top-row {
+  border-bottom: 1px solid rgba(0, 16, 33, 0.15);
+}
+
+body:not(.dark) .top-row-content .box-sub.color {
+  color: #1a8a3a;
+}
+
+body:not(.dark) .top-row-content .learn-dot {
+  background: #1a8a3a;
+}
+
 /* ========================
         TABLET
 ============================ */
@@ -227,15 +263,23 @@
       "top top"
       "left right";
     gap: 32px;
+    align-items: stretch;
   }
 
   .top-content {
     grid-area: top;
   }
+
+  .left-content,
+  .right-content {
+    height: 100%;
+  }
+
   .left-content {
     grid-area: left;
     margin-bottom: 0;
   }
+
   .right-content {
     grid-area: right;
   }
@@ -252,7 +296,7 @@
       "top top"
       "left right";
     gap: 48px;
-    align-items: start;
+    align-items: stretch;
   }
 
   .top-content {
@@ -269,6 +313,11 @@
 
   .top-content h1 {
     font-size: 3rem;
+  }
+
+  .left-content,
+  .right-content {
+    height: 100%;
   }
 
   .left-content {
