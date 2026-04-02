@@ -1,0 +1,147 @@
+.top-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.top-content .box-sub {
+  color: var(--tag);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* MIDDLE */
+.middle-content {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+/* BIO */
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-top: 1px solid rgba(0, 212, 255, 0.3);
+  padding: 2rem 0;
+}
+
+.bio-content {
+  padding: 0.5rem;
+  border-left: 2px solid var(--accent);
+  text-align: justify;
+}
+
+/* BACKGROUND */
+
+.background {
+  border-top: 1px solid rgba(0, 212, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+  padding: 2rem 0;
+}
+
+/* SKILLS */
+.skills {
+  border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+.box {
+  gap: 12px;
+  min-height: 50px;
+}
+
+.item {
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container-skills {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin-top: 48px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 12px;
+  grid-template-areas:
+    "box-1 box-2 box-3"
+    "box-4 box-5 box-6";
+}
+
+/* QUOTE */
+.quote {
+  display: flex;
+  border: 2px solid #e7cb76;
+  border-radius: 8px;
+  background: rgba(0, 212, 255, 0.1);
+  flex-direction: column;
+  padding: 3rem 0 2rem;
+
+  position: relative;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(0, 212, 255, 0.2);
+
+  animation: quoteFloat 4.1s ease-in-out infinite;
+}
+
+@keyframes quoteFloat {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.quotation-mark {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quotation-mark i {
+  font-size: 3rem;
+  opacity: 0.6;
+}
+
+.quote-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+}
+/* ================
+        TABLET
+===================== */
+@media (min-width: 780px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "box-1 box-2";
+    max-width: 100%;
+  }
+}
+
+/* ================
+        DESKTOP
+===================== */
+@media (min-width: 1280px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "box-1 box-2";
+    max-width: 100%;
+  }
+
+  .quotation-mark {
+    padding-inline: 3rem;
+  }
+}

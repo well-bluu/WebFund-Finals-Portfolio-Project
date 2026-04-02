@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- REMIXICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet" />
+
+    <!-- DEVICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/styles/fonts.css" />
+    <link rel="stylesheet" href="/styles/styles-mobile.css" />
+    <link rel="stylesheet" href="/styles/styles-tablet.css" />
+    <link rel="stylesheet" href="/styles/styles-desktop.css" />
+    <link rel="stylesheet" href="/about/about-style.css" />
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <!-- INTRO OVERLAY -->
+    <div id="intro-overlay">
+      <h1 class="intro-logo" data-text="well .">well <span>.</span></h1>
+      <p class="intro-sub">// LOADING CONTACT PAGE //</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="/index.html">well <span class="color">.</span></a>
+
+        <nav>
+          <!-- HAMBURGER -->
+          <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- OVERLAY -->
+          <div class="overlay" id="overlay"></div>
+
+          <!-- LINKS -->
+          <div class="menu" id="menu">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/index.html#about">About</a></li>
+              <li><a href="/projects/projects.html">Projects</a></li>
+              <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- DARK MODE TOGGLE -->
+        <button
+          class="theme-btn btn-neon"
+          id="theme-btn"
+          aria-label="Toggle theme">
+          <i class="ri-sun-line icon-sun"></i>
+          <i class="ri-moon-line icon-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+
+    <section class="about-page projects-preview">
+      <div class="container">
+        <div class="top-content">
+          <h1><span class="color hover-box">About</span> me</h1>
+          <p class="box-sub dim">// A SNIPPET OF WHO I AM //</p>
+        </div>
+
+        <!-- MIDDLE CONTENT -->
+        <div class="middle-content">
+          <!-- BIO -->
+          <div class="bio">
+            <div class="box-label color dim">bio</div>
+            <div class="bio-content box-body">
+              <p>
+                I'm a second year Software Engineering student at iACADEMY Cebu.
+                I started with C++ in my first year, and gradually found my way
+                into Java and Web development. I care about building things that
+                look good and work well. I'm still early in my journey, but I'm
+                driven by progress and curiosity.
+              </p>
+            </div>
+          </div>
+
+          <!-- BACKGROUND -->
+
+          <div class="background">
+            <div class="box-label color dim">background</div>
+            <div class="background-content grid-container">
+              <!-- SCHOOL -->
+              <div class="box" style="grid-area: box-1">
+                <span class="box-label">School</span>
+                <p class="box-title">iACADEMY Cebu</p>
+                <span class="box-sub">2nd Year · BSCS - SE</span>
+              </div>
+
+              <!-- HOBBIES -->
+              <div class="box" style="grid-area: box-2">
+                <span class="box-label">Hobbies</span>
+                <div class="box-flex">
+                  <div class="box-hobby"><span>Reading</span></div>
+                  <div class="box-hobby"><span>Gaming</span></div>
+                  <div class="box-hobby"><span>Anime</span></div>
+                  <div class="box-hobby"><span>Webnovels</span></div>
+                  <div class="box-hobby"><span>Manga</span></div>
+                  <div class="box-hobby"><span>Manhwa</span></div>
+                  <div class="box-hobby"><span>Manhua</span></div>
+                  <div class="box-hobby"><span>Music</span></div>
+                  <div class="box-hobby"><span>Walking</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SKILLS -->
+          <div class="skills">
+            <div class="box-label color dim">skills</div>
+            <div class="skills-content grid-container-skills">
+              <div class="box" style="grid-area: box-1">
+                <div class="item">
+                  <i class="devicon-cplusplus-plain"></i>
+                  <span>C++</span>
+                </div>
+              </div>
+
+              <div class="box" style="grid-area: box-2">
+                <div class="item">
+                  <i class="devicon-java-plain"></i>
+                  <span>Java</span>
+                </div>
+              </div>
+
+              <div class="box" style="grid-area: box-3">
+                <div class="item">
+                  <i class="devicon-html5-plain"></i>
+                  <span>HTML</span>
+                </div>
+              </div>
+
+              <div class="box" style="grid-area: box-4">
+                <div class="item">
+                  <i class="devicon-css3-plain"></i>
+                  <span>CSS</span>
+                </div>
+              </div>
+              <div class="box" style="grid-area: box-5">
+                <div class="item">
+                  <i class="devicon-javascript-plain"></i>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+              <div class="box" style="grid-area: box-6">
+                <div class="item">
+                  <i class="devicon-git-plain"></i>
+                  <span>Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- QUOTE -->
+
+          <div class="quote">
+            <div class="quotation-mark">
+              <i class="ri-double-quotes-l color"></i>
+              <i class="ri-double-quotes-r color"></i>
+            </div>
+            <div class="quote-content">
+              <p class="box-title">
+                A journey of a thousand miles begins with a single step.
+              </p>
+              <span class="box-sub">- Lao Tzu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/main.js"></script>
+  </body>
+</html>
