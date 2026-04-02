@@ -72,7 +72,7 @@
     height: 510px;
   }
 
-  .content {
+  .hero-content {
     text-align: left;
     gap: 1rem;
   }
@@ -138,10 +138,6 @@
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-  }
-
-  .projects-cta {
-    justify-content: flex-start;
   }
 
   .footer {

@@ -1,11 +1,11 @@
-.top-content {
+.section-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
 }
 
-.top-content .box-sub {
+.section-header .box-sub {
   color: var(--tag);
   font-size: 0.8rem;
   font-weight: 500;
@@ -50,6 +50,7 @@
   padding: 2rem 0;
   margin-bottom: 3rem;
 }
+
 .box {
   gap: 12px;
   min-height: 50px;

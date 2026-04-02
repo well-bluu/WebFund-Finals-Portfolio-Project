@@ -2,14 +2,14 @@
   margin-bottom: 3rem;
 }
 
-.bottom-row {
+.project-card-footer {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-top: auto;
 }
 
-.bottom-row a {
+.project-card-footer a {
   text-decoration: none;
 }
 
@@ -17,7 +17,7 @@
   justify-content: space-between;
 }
 
-.bottom-row .btn-view-all {
+.project-card-footer .btn-pill-link {
   width: 100%;
   justify-content: center;
   text-align: center;
@@ -33,22 +33,23 @@
     DESKTOP
 ==================*/
 @media (min-width: 1280px) {
-  .top-content {
+  .section-header {
     display: flex;
     justify-content: space-between;
   }
-  .bottom-row {
+
+  .project-card-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  .bottom-row .btn-view-all {
+  .project-card-footer .btn-pill-link {
     width: auto;
   }
 
-  .bottom-row .box-hobby {
+  .project-card-footer .box-hobby {
     display: flex;
     width: fit-content;
     align-items: center;

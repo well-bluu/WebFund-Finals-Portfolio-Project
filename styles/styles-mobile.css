@@ -49,8 +49,7 @@ body:not(.dark) {
   font-family: "Geist Sans";
 }
 
-.badge,
-.tag {
+.badge {
   font-family: "Geist Mono";
 }
 
@@ -492,7 +491,7 @@ body:not(.dark) .icon-moon {
 /* ==================
     CONTENT
 =======================*/
-.content {
+.hero-content {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -792,10 +791,6 @@ body:not(.dark) .box {
   color: var(--accent);
 }
 
-.btn-view-all {
-  cursor: pointer;
-}
-
 .box-hobby span {
   font-family: "Geist Mono";
   font-size: 0.72rem;
@@ -843,7 +838,7 @@ body:not(.dark) .box {
   margin-top: 2.5rem;
 }
 
-.btn-view-all {
+.btn-pill-link {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -857,29 +852,21 @@ body:not(.dark) .box {
   padding: 10px 24px;
   background-color: var(--accent);
   transition: transform 0.25s ease-out;
+  cursor: pointer;
 }
 
-.btn-view-all:hover {
+.btn-pill-link:hover {
   transform: translateY(-5px);
 }
 
-.btn-view-all i {
+.btn-pill-link i {
   color: var(--text);
   font-size: 1rem;
   transition: transform 0.25s ease;
 }
-.btn-view-all:hover i {
+
+.btn-pill-link:hover i {
   transform: translateX(5px);
-}
-
-.cta-box {
-  justify-content: space-between;
-}
-
-.cta-box .btn-view-all {
-  width: 100%;
-  justify-content: center;
-  margin-top: auto;
 }
 
 /* ==================
