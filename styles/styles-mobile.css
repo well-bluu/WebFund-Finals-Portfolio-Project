@@ -116,7 +116,7 @@ body:not(.dark) {
 #intro-overlay {
   position: fixed;
   inset: 0;
-  background: #0d1e38;
+  background: var(--bg);
   z-index: 9999;
   display: flex;
   justify-content: center;
@@ -136,7 +136,7 @@ body:not(.dark) {
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: 8px;
-  color: #f2f7f2;
+  color: var(--text);
   margin: 0;
   position: relative;
 }
@@ -153,7 +153,7 @@ body:not(.dark) {
   position: absolute;
   left: 2px;
   top: 0;
-  color: #f2f7f2;
+  color: var(--text);
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
   animation: glitch 3s infinite linear alternate-reverse;
@@ -190,7 +190,7 @@ body:not(.dark) {
   font-family: "Geist Mono";
   font-size: 0.8rem;
   letter-spacing: 0.3em;
-  color: #f2f7f2;
+  color: var(--text);
   opacity: 0.4;
   margin: 0;
   animation: blink 1.5s ease-in-out infinite;
