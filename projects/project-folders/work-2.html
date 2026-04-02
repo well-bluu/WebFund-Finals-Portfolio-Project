@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- REMIXICON -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet" />
+
+    <!-- DEVICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/styles/fonts.css" />
+    <link rel="stylesheet" href="/styles/styles-mobile.css" />
+    <link rel="stylesheet" href="/styles/styles-tablet.css" />
+    <link rel="stylesheet" href="/styles/styles-desktop.css" />
+    <link rel="stylesheet" href="/projects/project-folders/work-styles.css" />
+
+    <title>Card Gallery</title>
+  </head>
+
+  <body>
+    <!-- INTRO OVERLAY -->
+    <div id="intro-overlay">
+      <h1 class="intro-logo" data-text="well .">well <span>.</span></h1>
+      <p class="intro-sub">// LOADING CARD GALLERY PROJECT //</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container">
+        <a class="logo" href="/index.html">well <span class="color">.</span></a>
+        <nav>
+          <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="overlay" id="overlay"></div>
+          <div class="menu" id="menu">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/about/about.html">About</a></li>
+              <li><a href="/projects/projects.html">Projects</a></li>
+              <li><a href="/contact/contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <button
+          class="theme-btn btn-neon"
+          id="theme-btn"
+          aria-label="Toggle theme">
+          <i class="ri-sun-line icon-sun"></i>
+          <i class="ri-moon-line icon-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- PROJECT DETAIL -->
+
+    <main class="project-detail-page">
+      <div class="container">
+        <!-- BACK LINK -->
+        <a href="/projects/projects.html" class="back-link">
+          <i class="ri-arrow-left-line"></i> Back to Projects
+        </a>
+
+        <!-- PROJECT NAME -->
+        <div class="project-detail">
+          <span class="project-type box-label">Web · Static Site</span>
+          <h1 class="project-title">Card Gallery</h1>
+        </div>
+
+        <div class="project-info-container">
+          <!-- LEFT SECTION -->
+          <div class="detail-info">
+            <div class="detail-section">
+              <span class="box-label">Context / Problem</span>
+              <p class="box-body">
+                Our professor wanted us to practice building layouts and card
+                components using pure HTML and CSS, and let us choose a theme we
+                want. A Will Eternal is one of my favorite webnovels, so I used
+                its characters as the content for the gallery.
+              </p>
+            </div>
+
+            <div class="detail-section">
+              <span class="box-label">What I Built</span>
+              <p class="box-body">
+                A responsive card gallery featuring the main character of A Will
+                Eternal and his wives. The layout uses CSS Grid and Flexbox for
+                responsiveness. The project is live on Netlify and was one of my
+                earliest pure HTML/CSS builds.
+              </p>
+            </div>
+
+            <div class="detail-section">
+              <span class="box-label">Technologies Used</span>
+              <div class="box-flex">
+                <div class="box-hobby"><span>HTML</span></div>
+                <div class="box-hobby"><span>CSS</span></div>
+                <div class="box-hobby"><span>Netlify</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: image -->
+          <div class="project-image">
+            <img
+              class="main-image"
+              src="/assets/images/work-2-image/image1.png"
+              alt="image1.png" />
+
+            <div class="project-external-links">
+              <!-- GITHUB -->
+              <a
+                href="https://github.com/well-bluu/Card-Gallery"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-pill-link"
+                >View on Github
+                <i class="ri-github-fill"></i>
+              </a>
+
+              <!-- NETLIFY -->
+              <a
+                href="https://a-will-eternal-gallery.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-pill-link"
+                >View on Netlify
+                <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMPROVEMENT -->
+        <div class="project-improvement">
+          <span class="box-label">What I'd Improve Next</span>
+          <div class="improvement-block">
+            <p class="box-body">
+              I'd add a better hover animations on the cards, a lightbox for
+              viewing images in full size, and fix background image when in
+              mobile view.
+            </p>
+          </div>
+        </div>
+
+        <!-- BOTTOM NAV -->
+        <div class="project-nav">
+          <a
+            href="/projects/project-folders/work-1.html"
+            class="project-nav-link">
+            <i class="ri-arrow-left-line"></i> Previous Project
+          </a>
+          <a
+            href="/projects/projects.html"
+            class="project-nav-link detail-nav-center">
+            All Projects
+          </a>
+          <a
+            href="/projects/project-folders/work-3.html"
+            class="project-nav-link detail-nav-right">
+            Next Project <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

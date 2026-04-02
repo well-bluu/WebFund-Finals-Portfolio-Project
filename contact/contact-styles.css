@@ -35,6 +35,10 @@
   border-bottom: 1px solid rgba(90, 185, 237, 0.15);
 }
 
+.terminal-bar .box-sub {
+  margin-inline: auto;
+}
+
 .dots {
   display: flex;
   flex-direction: row;
@@ -55,15 +59,6 @@
 
 .contact-form .learn-dot:nth-child(3) {
   background: #28ca41;
-}
-
-.box-label {
-  display: flex;
-  margin-inline: auto;
-  font-size: 0.8rem;
-  letter-spacing: normal;
-  text-transform: none;
-  color: #eef0f2;
 }
 
 .contact-body {

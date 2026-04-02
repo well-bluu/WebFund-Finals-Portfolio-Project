@@ -579,7 +579,7 @@ body:not(.dark) .icon-moon {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(calc(-25% - 12px));
   }
 }
 
@@ -685,17 +685,17 @@ body:not(.dark) .box {
 
 .box-label {
   font-family: "Geist Mono";
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 500;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--text);
-  opacity: 0.45;
+  color: var(--accent);
+  opacity: 0.75;
 }
 
 .box-body {
   font-family: "Geist Sans";
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
   color: var(--text);
@@ -712,7 +712,7 @@ body:not(.dark) .box {
 
 .box-sub {
   font-family: "Geist Mono";
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 400;
   letter-spacing: 0.04em;
   color: var(--accent);
@@ -793,7 +793,7 @@ body:not(.dark) .box {
 
 .box-hobby span {
   font-family: "Geist Mono";
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   color: var(--text);
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -843,7 +843,7 @@ body:not(.dark) .box {
   align-items: center;
   gap: 8px;
   font-family: "Geist Mono";
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   letter-spacing: 0.08em;
   color: var(--text);
   text-decoration: none;
@@ -899,7 +899,7 @@ body:not(.dark) .box {
 
 .footer-copy {
   font-family: "Geist Mono";
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   opacity: 0.35;
   letter-spacing: 0.05em;
 }

@@ -1,0 +1,281 @@
+/* ==================---
+    PROJECT DETAIL PAGE
+=========================*/
+
+.project-detail-page {
+  padding-bottom: 5rem;
+}
+
+.project-detail-page .container {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ============
+    BACK LINK
+================= */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Geist Mono";
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  text-decoration: none;
+  opacity: 0.7;
+  margin-bottom: 2.5rem;
+  transition:
+    opacity 0.2s ease,
+    gap 0.2s ease;
+}
+
+.back-link:hover {
+  opacity: 1;
+  gap: 10px;
+}
+
+/* ==========
+    DETAILS
+============ */
+.project-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(90, 185, 237, 0.2);
+}
+
+.project-type {
+  font-size: 0.78rem;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.project-title {
+  font-family: "Geist Sans";
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text);
+}
+
+.project-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+/* =====================-
+    LEFT: INFO SECTIONS
+========================= */
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ===================
+    RIGHT: IMAGE
+====================== */
+.project-image {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 1.5rem;
+}
+
+.main-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 1px solid rgba(90, 185, 237, 0.2);
+  border-radius: 10px;
+  background-color: #0d1e38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.main-image:hover {
+  border-color: rgba(90, 185, 237, 0.45);
+}
+
+body:not(.dark) .main-image {
+  background-color: #e2e0db;
+  border-color: rgba(0, 16, 33, 0.1);
+}
+
+.project-external-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn-pill-link {
+  font-size: 0.6rem;
+}
+
+/* ====================
+    IMPROVEMENT
+======================== */
+.project-improvement {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(90, 185, 237, 0.2);
+  margin-bottom: 4rem;
+}
+
+.improvement-block {
+  border-left: 2px solid var(--accent);
+  padding: 1.25rem 1.5rem;
+  background: rgba(90, 185, 237, 0.04);
+  border-radius: 0 8px 8px 0;
+}
+
+body:not(.dark) .improvement-block {
+  background: rgba(0, 16, 33, 0.04);
+}
+
+/* =================
+    BOTTOM NAV
+==================== */
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(90, 185, 237, 0.15);
+  gap: 1rem;
+}
+
+.project-nav-link {
+  font-family: "Geist Mono";
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  text-decoration: none;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition:
+    opacity 0.2s ease,
+    gap 0.2s ease;
+  white-space: nowrap;
+}
+
+.project-nav-link:hover {
+  opacity: 1;
+}
+
+.project-nav-link:hover i.ri-arrow-left-line {
+  transform: translateX(-4px);
+  transition: transform 0.2s ease;
+}
+
+.project-nav-link:hover i.ri-arrow-right-line {
+  transform: translateX(4px);
+  transition: transform 0.2s ease;
+}
+
+.project-nav-center {
+  color: var(--text);
+  opacity: 0.4;
+  font-size: 0.72rem;
+}
+
+.project-nav-center:hover {
+  opacity: 0.8;
+  color: var(--accent);
+}
+
+.project-nav-right {
+  text-align: right;
+}
+
+/* ==========
+    TABLET 
+============== */
+@media (min-width: 768px) {
+  .project-title {
+    font-size: 3rem;
+  }
+
+  .project-details {
+    margin-bottom: 3rem;
+  }
+
+  .project-info-container {
+    gap: 3rem;
+  }
+
+  .btn-pill-link {
+    font-size: 0.78rem;
+  }
+
+  .detail-nav-link {
+    font-size: 0.8rem;
+  }
+}
+
+/* ===========
+    DESKTOP 
+============= */
+@media (min-width: 1280px) {
+  .project-detail-page .container {
+    padding-top: 3rem;
+  }
+
+  .project-details {
+    margin-bottom: 3rem;
+  }
+
+  .project-info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    margin-bottom: 4rem;
+  }
+
+  .detail-info {
+    gap: 2.5rem;
+  }
+
+  .btn-pill-link {
+    font-size: 0.78rem;
+  }
+  .project-reflection {
+    padding-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .reflection-block {
+    padding: 1.5rem 2rem;
+    max-width: 780px;
+  }
+
+  .project-nav {
+    padding-top: 2.5rem;
+  }
+
+  .project-nav-link {
+    font-size: 0.82rem;
+  }
+}

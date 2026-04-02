@@ -44,15 +44,18 @@ menu
   .querySelectorAll("a")
   .forEach((link) => link.addEventListener("click", closeMenu));
 
-/// ==================
+// ==================
 //    DARK MODE
 // ==================
+
 function setTheme(isDark) {
   document.body.classList.toggle("dark", isDark);
+
   if (profilePicture) {
     profilePicture.src = isDark ? darkImg : lightImg;
     profilePicture.alt = isDark ? "Me with closed eyes" : "Me with open eyes";
   }
+
   sessionStorage.setItem("theme", isDark ? "dark" : "light");
 }
 
@@ -60,13 +63,9 @@ themeBtn.addEventListener("click", () => {
   setTheme(!document.body.classList.contains("dark"));
 });
 
-// SAVE THEME
+// LOAD THEME
 const savedTheme = sessionStorage.getItem("theme");
-setTheme(
-  savedTheme
-    ? savedTheme === "dark"
-    : window.matchMedia("(prefers-color-scheme: dark)").matches,
-);
+setTheme(savedTheme === "dark");
 
 // ==================
 //    SMOOTH SCROLL
