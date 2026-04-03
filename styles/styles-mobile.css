@@ -77,37 +77,15 @@ body:not(.dark) {
   color: #0a1628;
 }
 
-/* ==================
-    BUTTON NEON - CODEPEN
-=======================*/
-.btn-neon {
-  background: transparent;
-  border: 2px solid var(--accent);
-  color: var(--accent);
-  box-shadow:
-    0 0 6px oklch(75% 0.1 240 / 0.35),
-    0 0 12px oklch(75% 0.1 240 / 0.2),
-    inset 0 0 6px oklch(75% 0.1 240 / 0.06);
-  animation: neon-pulse 1.5s ease-in-out infinite alternate;
+.background-block {
+  border-left: 2px solid var(--accent);
+  padding: 1.25rem 1.5rem;
+  background: rgba(90, 185, 237, 0.08);
+  border-radius: 0 8px 8px 0;
 }
 
-.btn-neon:hover {
-  background: var(--accent);
-  color: var(--bg);
-}
-
-@keyframes neon-pulse {
-  0% {
-    box-shadow:
-      0 0 4px oklch(75% 0.1 240 / 0.35),
-      0 0 8px oklch(75% 0.1 240 / 0.2);
-  }
-  100% {
-    box-shadow:
-      0 0 8px oklch(75% 0.1 240 / 0.45),
-      0 0 14px oklch(75% 0.1 240 / 0.3),
-      0 0 20px oklch(75% 0.1 240 / 0.2);
-  }
+body:not(.dark) .background-block {
+  background: rgba(0, 16, 33, 0.08);
 }
 
 /* ==================
@@ -243,14 +221,14 @@ nav {
 =======================*/
 .theme-btn {
   cursor: pointer;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  height: 41px;
+  width: 41px;
   border-radius: 50%;
   border: 1px solid var(--accent);
-  color: var(--accent);
+  background-color: var(--accent);
+  color: var(--text);
   transition:
     background 0.25s ease,
     color 0.25s ease;
@@ -268,6 +246,7 @@ nav {
 .icon-sun {
   display: none;
 }
+
 .icon-moon {
   display: block;
 }
@@ -275,12 +254,15 @@ nav {
 body.dark .icon-sun {
   display: none;
 }
+
 body.dark .icon-moon {
   display: block;
 }
+
 body:not(.dark) .icon-sun {
   display: block;
 }
+
 body:not(.dark) .icon-moon {
   display: none;
 }
@@ -617,7 +599,7 @@ body:not(.dark) .icon-moon {
 ================*/
 .about-me,
 .projects-preview {
-  padding: 5rem 0 3rem;
+  padding: 5rem 0;
 }
 
 .about-me h1,
@@ -847,7 +829,7 @@ body:not(.dark) .box {
   letter-spacing: 0.08em;
   color: var(--text);
   text-decoration: none;
-  border: 1px solid #0d1e38;
+  border: 1px solid var(--accent);
   border-radius: 999px;
   padding: 10px 24px;
   background-color: var(--accent);

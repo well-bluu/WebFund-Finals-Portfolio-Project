@@ -126,7 +126,7 @@ body:not(.dark) .main-image {
 }
 
 .btn-pill-link {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 /* ====================
@@ -139,17 +139,6 @@ body:not(.dark) .main-image {
   padding-top: 2.5rem;
   border-top: 1px solid rgba(90, 185, 237, 0.2);
   margin-bottom: 4rem;
-}
-
-.improvement-block {
-  border-left: 2px solid var(--accent);
-  padding: 1.25rem 1.5rem;
-  background: rgba(90, 185, 237, 0.04);
-  border-radius: 0 8px 8px 0;
-}
-
-body:not(.dark) .improvement-block {
-  background: rgba(0, 16, 33, 0.04);
 }
 
 /* =================

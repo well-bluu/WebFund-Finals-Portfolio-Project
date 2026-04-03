@@ -1,5 +1,8 @@
-.contact-form-panel {
-  margin-bottom: 32px;
+.split-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .section-header .box-sub {
@@ -106,6 +109,10 @@
   outline: none;
   resize: none;
   transition: border-color 0.2s ease;
+}
+
+.input-area:focus {
+  border-color: var(--accent);
 }
 
 .btn-pill-link {
@@ -251,32 +258,18 @@ body:not(.dark) .top-row-content .learn-dot {
         TABLET
 ============================ */
 @media (min-width: 768px) {
-  .contact-page .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "top top"
-      "left right";
-    gap: 32px;
-    align-items: stretch;
-  }
-
-  .section-header {
-    grid-area: top;
+  .split-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
   }
 
   .contact-form-panel,
   .contact-info-panel {
+    flex: 1;
+    /* min-width: 0;  */
     height: 100%;
-  }
-
-  .contact-form-panel {
-    grid-area: left;
     margin-bottom: 0;
-  }
-
-  .contact-info-panel {
-    grid-area: right;
   }
 }
 
@@ -284,14 +277,17 @@ body:not(.dark) .top-row-content .learn-dot {
         DESKTOP
 ============================ */
 @media (min-width: 1280px) {
-  .contact-page .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "top top"
-      "left right";
-    gap: 48px;
-    align-items: stretch;
+  .split-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  .contact-form-panel,
+  .contact-info-panel {
+    flex: 1;
+    height: 100%;
+    margin-bottom: 0;
   }
 
   .section-header {
@@ -310,28 +306,11 @@ body:not(.dark) .top-row-content .learn-dot {
     font-size: 3rem;
   }
 
-  .contact-form-panel,
-  .contact-info-panel {
-    height: 100%;
-  }
-
-  .contact-form-panel {
-    grid-area: left;
-  }
-
-  .contact-info-panel {
-    grid-area: right;
-  }
-
   .middle-row {
     gap: 32px;
   }
 
   .contact-location-block p {
     font-size: 1.5rem;
-  }
-
-  .contact-socials-row {
-    margin-top: auto;
   }
 }

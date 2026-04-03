@@ -30,12 +30,6 @@
   padding: 2rem 0;
 }
 
-.bio-content {
-  padding: 0.5rem;
-  border-left: 2px solid var(--accent);
-  text-align: justify;
-}
-
 /* BACKGROUND */
 
 .background {
