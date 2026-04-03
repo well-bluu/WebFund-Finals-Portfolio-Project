@@ -16,7 +16,7 @@ A responsive, multi-page personal portfolio built with HTML, CSS, and vanilla Ja
 - Multi-page project showcase with individual work detail pages
 - Reusable assets (fonts and images)
 - Shared JavaScript behavior via `main.js`
-- Deployed on Netlify <mark>kendall-maputi-portfolio.netlify.app</mark>
+- Deployed on Netlify `kendall-maputi-portfolio.netlify.app`
 
 ## Tech Stack
 
