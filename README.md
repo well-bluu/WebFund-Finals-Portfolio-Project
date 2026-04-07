@@ -15,11 +15,11 @@ This project presents a personal portfolio with dedicated pages for introduction
 
 ## Key Features
 
-- Responsive layouts for mobile, tablet, and desktop
-- Shared global styling with page-specific CSS files
-- Multi-page project showcase with individual work detail pages
-- Reusable assets (fonts and images)
-- Shared JavaScript behavior via `main.js`
+- Responsive design across mobile, tablet, and desktop
+- Shared global styles plus page-specific styling
+- Project showcase with individual work detail pages
+- Centralized assets for fonts and images
+- Shared JavaScript interactions in `main.js`
 
 ## Tech Stack
 
