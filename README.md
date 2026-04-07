@@ -89,7 +89,7 @@ portfolio-finals/
 ## Notes
 
 - This project is intended for educational and personal portfolio use.
-- Test the site on multiple browsers and device sizes before final submission.
+- You can view this project live on netlify `kendall-maputi-portfolio.netlify.app`
 
 ## License
 
