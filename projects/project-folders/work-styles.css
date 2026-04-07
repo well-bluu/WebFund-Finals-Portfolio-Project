@@ -126,7 +126,10 @@ body:not(.dark) .main-image {
 }
 
 .btn-pill-link {
-  font-size: 0.7rem;
+  width: 50%;
+  font-size: 0.75rem;
+  padding: 12px 12px;
+  justify-content: center;
 }
 
 /* ====================
@@ -215,7 +218,8 @@ body:not(.dark) .main-image {
   }
 
   .btn-pill-link {
-    font-size: 0.78rem;
+    width: 30%;
+    font-size: 0.8rem;
   }
 
   .detail-nav-link {
@@ -248,8 +252,11 @@ body:not(.dark) .main-image {
   }
 
   .btn-pill-link {
-    font-size: 0.78rem;
+    width: 50%;
+    font-size: 0.85rem;
+    padding: 10px 24px;
   }
+
   .project-reflection {
     padding-top: 3rem;
     margin-bottom: 5rem;
