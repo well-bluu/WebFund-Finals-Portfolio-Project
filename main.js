@@ -66,14 +66,3 @@ themeBtn.addEventListener("click", () => {
 // LOAD THEME
 const savedTheme = sessionStorage.getItem("theme");
 setTheme(savedTheme === "dark");
-
-// ==================
-//    SMOOTH SCROLL
-// ==================
-document.querySelectorAll("a[href^='#']").forEach((anchor) => {
-  anchor.addEventListener("click", (e) => {
-    e.preventDefault();
-    const target = document.querySelector(anchor.getAttribute("href"));
-    if (target) target.scrollIntoView({ behavior: "smooth" });
-  });
-});

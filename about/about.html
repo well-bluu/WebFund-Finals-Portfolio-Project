@@ -58,10 +58,14 @@
         </nav>
 
         <!-- DARK MODE TOGGLE -->
-        <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">
-          <i class="ri-sun-line icon-sun"></i>
-          <i class="ri-moon-line icon-moon"></i>
-        </button>
+        <div class="tooltip-container">
+          <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">
+            <i class="ri-sun-line icon-sun"></i>
+            <i class="ri-moon-line icon-moon"></i>
+          </button>
+
+          <span class="tooltip-text">Click me to change theme</span>
+        </div>
       </div>
     </header>
 
@@ -76,17 +80,27 @@
 
         <!-- MIDDLE CONTENT -->
         <div class="middle-content">
-          <!-- BIO -->
-          <div class="bio">
-            <div class="box-label color">bio</div>
-            <div class="background-block box-body">
-              <p>
-                I'm a second year Software Engineering student at iACADEMY Cebu.
-                I started with C++ in my first year, and now also learning Java
-                and Web development. I care about building things that look good
-                and work well. I'm still early in my journey, but I'm driven by
-                progress and curiosity.
-              </p>
+          <div class="about-me-container">
+            <img
+              class="about-me-image"
+              src="/assets/images/about-me-image.jpg"
+              alt="Formal Picture of me" />
+
+            <!-- RIGHT CONTENT -->
+            <div class="right-content">
+              <h1>Hi! I'm <span class="color hover-box">Kendall</span></h1>
+              <!-- BIO -->
+              <div class="bio">
+                <div class="background-block box-body">
+                  <p>
+                    I'm a second year Software Engineering student at iACADEMY
+                    Cebu. I started with C++ in my first year, and now also
+                    learning Java and Web development. I care about building
+                    things that look good and work well. I'm still early in my
+                    journey, but I'm driven by progress and curiosity.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 

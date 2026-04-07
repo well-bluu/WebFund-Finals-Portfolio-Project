@@ -50,18 +50,22 @@
           <div class="menu" id="menu">
             <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="/about/about.html">About</a></li>
+              <li><a href="/projects/projects.html">Projects</a></li>
+              <li><a href="/contact/contact.html">Contact</a></li>
             </ul>
           </div>
         </nav>
 
         <!-- DARK MODE TOGGLE -->
-        <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">
-          <i class="ri-sun-line icon-sun"></i>
-          <i class="ri-moon-line icon-moon"></i>
-        </button>
+        <div class="tooltip-container">
+          <button class="theme-btn" id="theme-btn" aria-label="Toggle theme">
+            <i class="ri-sun-line icon-sun"></i>
+            <i class="ri-moon-line icon-moon"></i>
+          </button>
+
+          <span class="tooltip-text">Click me to change theme</span>
+        </div>
       </div>
     </header>
 
@@ -102,59 +106,49 @@
 
             <!-- Facebook -->
             <div class="links-box">
-              <div class="circle">
-                <a
-                  class="links"
-                  href="https://www.facebook.com/"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <i class="ri-facebook-circle-fill"></i>
-                </a>
-              </div>
+              <a
+                class="links circle"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/"
+                ><i class="ri-facebook-circle-fill"></i
+              ></a>
 
               <!-- Instagram -->
-              <div class="circle">
-                <a
-                  class="links"
-                  href="https://www.instagram.com/katarinabluu/?hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <i class="ri-instagram-line"></i>
-                </a>
-              </div>
+              <a
+                class="links circle"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/katarinabluu/?hl=en"
+                ><i class="ri-instagram-line"></i
+              ></a>
 
               <!-- X -->
-              <div class="circle">
-                <a
-                  class="links"
-                  href="https://x.com/"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <i class="ri-twitter-x-line"></i>
-                </a>
-              </div>
+              <a
+                class="links circle"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://x.com/"
+                ><i class="ri-twitter-x-line"></i
+              ></a>
 
               <!-- Threads -->
-              <div class="circle">
-                <a
-                  class="links"
-                  href="https://www.threads.com/?hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <i class="ri-threads-line"></i>
-                </a>
-              </div>
+              <a
+                class="links circle"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.threads.com/?hl=en"
+                ><i class="ri-threads-line"></i
+              ></a>
 
               <!-- Github -->
-              <div class="circle">
-                <a
-                  class="links"
-                  href="https://github.com/well-bluu"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <i class="ri-github-fill"></i>
-                </a>
-              </div>
+              <a
+                class="links circle"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/well-bluu"
+                ><i class="ri-github-fill"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -343,6 +337,7 @@
               <div class="flex-between">
                 <span class="box-label">Java</span>
                 <div class="project-links">
+                  <!-- GITHUB -->
                   <a
                     href="https://github.com/well-bluu/Java-Finals-Webnovel-To-Epub"
                     target="_blank"
@@ -351,13 +346,29 @@
                   </a>
                 </div>
               </div>
-              <p class="box-title">Webnovel to Epub</p>
-              <p class="box-body">
-                A multithreaded Java application that downloads web novels from
-                a website and packages them into an EPUB file.
-              </p>
-              <div class="box-flex">
-                <div class="box-hobby"><span>Java</span></div>
+
+              <div class="projects-body">
+                <p class="box-title">Webnovel to Epub</p>
+                <div class="box-flex">
+                  <div class="box-hobby"><span>Java</span></div>
+                </div>
+                <img
+                  class="project-image-preview"
+                  src="/assets/images/work-1-image/image1.png"
+                  alt="webnovel to epub" />
+                <p class="box-body">
+                  A multithreaded Java application that downloads web novels
+                  from a website and packages them into an EPUB file.
+                </p>
+              </div>
+
+              <div class="project-card-footer">
+                <a
+                  href="/projects/project-folders/work-1.html"
+                  rel="noopener noreferrer"
+                  class="btn-pill-link">
+                  View this Project <i class="ri-arrow-right-line"></i>
+                </a>
               </div>
             </div>
 
@@ -366,12 +377,14 @@
               <div class="flex-between">
                 <span class="box-label">Web</span>
                 <div class="project-links">
+                  <!-- GITHUB -->
                   <a
                     href="https://github.com/well-bluu/Card-Gallery"
                     target="_blank"
                     rel="noopener noreferrer">
                     <i class="ri-github-fill"></i>
                   </a>
+                  <!-- NETLIFY -->
                   <a
                     href="https://a-will-eternal-gallery.netlify.app/"
                     target="_blank"
@@ -380,14 +393,31 @@
                   </a>
                 </div>
               </div>
-              <p class="box-title">Card Gallery</p>
-              <p class="box-body">
-                A simple HTML + CSS card gallery featuring the main character of
-                A Will Eternal and his wives.
-              </p>
-              <div class="box-flex">
-                <div class="box-hobby"><span>HTML</span></div>
-                <div class="box-hobby"><span>CSS</span></div>
+
+              <div class="projects-body">
+                <p class="box-title">Card Gallery</p>
+                <div class="box-flex">
+                  <div class="box-hobby"><span>HTML</span></div>
+                  <div class="box-hobby"><span>CSS</span></div>
+                </div>
+
+                <img
+                  class="project-image-preview"
+                  src="/assets/images/work-2-image/image1.png"
+                  alt="card gallery" />
+                <p class="box-body">
+                  A simple HTML + CSS card gallery featuring the main character
+                  of A Will Eternal and his wives.
+                </p>
+              </div>
+
+              <div class="project-card-footer">
+                <a
+                  href="/projects/project-folders/work-2.html"
+                  rel="noopener noreferrer"
+                  class="btn-pill-link">
+                  View this Project <i class="ri-arrow-right-line"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -407,7 +437,7 @@
             Initiating <span class="color hover-box">contact</span> sequence.
           </h1>
           <a href="/contact/contact.html" class="btn-pill-link">
-            Click here <i class="ri-arrow-right-line"></i>
+            Contact me here <i class="ri-arrow-right-line"></i>
           </a>
           <p class="footer-copy">
             © 2026 Kendall Bryant Maputi. All rights reserved.

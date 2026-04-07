@@ -2,25 +2,8 @@
   margin-bottom: 3rem;
 }
 
-.project-card-footer {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: auto;
-}
-
-.project-card-footer a {
-  text-decoration: none;
-}
-
 .projects-grid .box {
   justify-content: space-between;
-}
-
-.project-card-footer .btn-pill-link {
-  width: 100%;
-  justify-content: center;
-  text-align: center;
 }
 
 /* ===============
@@ -38,20 +21,7 @@
     justify-content: space-between;
   }
 
-  .project-card-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   .project-card-footer .btn-pill-link {
     width: auto;
-  }
-
-  .project-card-footer .box-hobby {
-    display: flex;
-    width: fit-content;
-    align-items: center;
   }
 }
