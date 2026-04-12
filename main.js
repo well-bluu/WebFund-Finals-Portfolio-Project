@@ -7,6 +7,7 @@ const menu = document.getElementById("menu");
 const overlay = document.getElementById("overlay");
 const themeBtn = document.getElementById("theme-btn");
 const profilePicture = document.getElementById("profile-picture");
+const typewriterSection = document.querySelector(".typewriter");
 
 // ==================
 //    IMAGES
@@ -66,3 +67,26 @@ themeBtn.addEventListener("click", () => {
 // LOAD THEME
 const savedTheme = sessionStorage.getItem("theme");
 setTheme(savedTheme === "dark");
+
+// ==================
+//   TYPEWRITER ON SCROLL
+// ==================
+if (typewriterSection) {
+  if ("IntersectionObserver" in window) {
+    const typewriterObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            typewriterSection.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.4 },
+    );
+
+    typewriterObserver.observe(typewriterSection);
+  } else {
+    typewriterSection.classList.add("is-visible");
+  }
+}

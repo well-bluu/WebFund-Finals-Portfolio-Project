@@ -956,3 +956,38 @@ body:not(.dark) .box {
   opacity: 0.35;
   letter-spacing: 0.05em;
 }
+
+.typewriter {
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h1 {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--accent);
+  animation:
+    typing 3s steps(28) forwards,
+    blink 1s step-end infinite;
+  animation-play-state: paused;
+}
+
+.typewriter.is-visible h1 {
+  animation-play-state: running;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

@@ -89,6 +89,7 @@ portfolio-finals/
 ## Notes
 
 - This project is intended for educational and personal portfolio use.
+- This project is a final project requirement for my subject Web Fundamentals
 - You can view this project live on netlify `kendall-maputi-portfolio.netlify.app`
 
 ## License
